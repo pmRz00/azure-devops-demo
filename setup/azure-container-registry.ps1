@@ -3,7 +3,7 @@ az account list-locations | Select-String -Pattern eu
 
 $location = "westeurope"
 $rg = "devops-demo"
-$acr = "h"
+$acr = "azuredevops2019"
 
 # Create a resource group $rg on a specific location $location (for example eastus) which will contain the Azure services we need 
 az group create -l $location -n $rg
