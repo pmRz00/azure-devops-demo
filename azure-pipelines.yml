@@ -12,7 +12,12 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-
+- task: ManualIntervention@8
+  inputs:
+    instructions: 'd2d2d3'
+- task: ManualIntervention@8
+  inputs:
+  timeoutInMinutes: 1
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
